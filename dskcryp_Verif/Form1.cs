@@ -151,8 +151,8 @@ namespace dskcryp_Verif
             string[] cur_Rkey = rKeyOutput.Split(new string[] { "\n", "\r\n" }, StringSplitOptions.RemoveEmptyEntries);
             RecINFO.WaitForExit();
             //clean up and display the recovery key
-            String my_Rkey = cur_Rkey[11];
-            //String my_Rkey = cur_Rkey[8];
+            //String my_Rkey = cur_Rkey[11];
+            String my_Rkey = cur_Rkey[7];
             my_Rkey = my_Rkey.TrimStart();
             //need a better way, loop thorugh the results and if the length is 63 then it is a recovery key. there could be more than one
 
